@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="film.css">
+
+</head>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bgimg {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTWYBa9RUV5DHvk2f11mDDsLhUHkFBRh8C_sg&usqp=CAU');
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+}
+
+.topleft {
+
+  top: 10%;
+  left: 25px;
+  color: white;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
+
+.fun{
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+  color:white;
+}
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.topc{
+  position: relative;
+  color:green;
+  top: 7%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+hr {
+  margin: auto;
+  width: 40%;
+}
+
+.movie_name{
+  font-size:150px;
+}
+.loader{
+  filter:hue-rotate(0deg);
+  color: linear-gradient(45deg,#0f8,#08f);
+  animation:hue 5000ms infinite linear;
+}
+
+@keyframes spinify {
+  0% {
+    transform: translate(0px,0px);
+
+  }
+  33% {
+    transform: translate(0px,24px);
+    border-radius:100%;
+    width:10px;
+    height:10px;
+
+  }
+   66% {
+    transform:translate(0px,-16px);
+  }
+
+   88% {
+    transform:translate(0px,4px);
+
+  }
+  100% {
+    transform:translate(0px,0px);
+  }
+}
+@keyframes hue{
+  0%{filter: hue-rotate(0deg);}
+  100%{filter:hue-rotate(360deg);}
+
+}
+
+</style>
+
+
+<body class="loader">
+
+<div class="bgimg">
+  <div class="topleft">
+  <p><i> One Love,One Heart,One Destiny</i></p>
+  <p><span class="glyphicon glyphicon-heart"></span><span class="glyphicon glyphicon-heart-empty"></span><span class="glyphicon glyphicon-heart"></span><span class="glyphicon glyphicon-heart-empty"></span><span class="glyphicon glyphicon-heart"></span></p>
+  </div>
+  <div class="topc">
+    <p><a href="home.html">
+          <span class="glyphicon glyphicon-film"></span>
+        </a>
+        <a href="about.html">
+          <span class="glyphicon glyphicon-user"></span>
+        </a>
+      </p>
+
+  <h1 class="movie_name">ANUHYA</h1>
+  <h2><b>An Unplanned Tale</b></h2>
+  </div>
+  <div class="middle">
+    <h1>COMING SOON</h1>
+    <hr>
+    <p>ಅತಿ ಶೀಘ್ರದಲ್ಲೇ</p>
+
+  </div>
+
+  <div class="bottomleft">
+    <p>A Film By :</p>
+    <p>Nachiketh and Tarun</p>
+  </div>
+</div>
+
+</body>
+</html>
