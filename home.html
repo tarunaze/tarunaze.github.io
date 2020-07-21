@@ -17,6 +17,16 @@
 
 
    <script type="text/javascript">
+     function FixBackgroundToScreen()
+{
+    bgImg = new Image(); 
+    bgImg.src = document.body.background;
+
+    if ((bgImg.height / window.innerHeight) < (bgImg.width / window.innerWidth))
+        document.body.style.backgroundSize = "auto 100%";
+    else
+        document.body.style.backgroundSize = "100% auto";
+};    
    function toggle (t) {
      var x = document.getElementById("demo");
      var y = document.getElementById("theme");
@@ -39,6 +49,9 @@
 
    }
    </script>
+    <script language="Javascript">
+window.onresize=function(){FixBackgroundToScreen();};
+</script>
 
 <style>
 
@@ -93,7 +106,7 @@
 
 
   </head>
-  <body class='loader div1'>
+  <body class='loader div1' onload="FixBackgroundToScreen();">
     <nav class="navbar navbar-inverse navbar-expand-lg bg-dark techfont">
       <div class="container">
 
